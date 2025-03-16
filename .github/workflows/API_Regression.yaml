@@ -11,24 +11,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: "test-compile"
-        run: |
-          chmod -R 755 test
-          cd test
-          ls -lR
-          echo "start java compile"
-          javac -d bin src/**/*.java
-          echo "java compile done"
-          ls -lR
-          java -version
-          echo "Setup done"
       - name: "test-execution"
         run: |
            cd test
-           ls -l
            java -Dfile.encoding=UTF-8 -classpath bin:resources test.testCBA
-      - name: "save-test-report"
+      - name: "test-report"
+        run: ls -l
         uses: actions/upload-artifact@v4
         with:
           name: test-report
-          path: ./target/*
+          path: test/target/
