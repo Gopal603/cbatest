@@ -15,7 +15,8 @@ jobs:
         run: |
           chmod -R 755 test
           cd test
-          javac -d bin src/test/testCBA.java
+          ls -lR
+          javac -d bin src/**/*.java
           ls -lR 
           java -version
           echo "Setup done" 
