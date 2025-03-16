@@ -14,7 +14,7 @@ jobs:
       - name: "test-case-setup"
         run: |
           cd test
-          ls -l 
+          ls -lR 
           java -version
           echo "Setup done" 
   execute-job:
