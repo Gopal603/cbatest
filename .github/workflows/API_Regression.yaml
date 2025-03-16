@@ -16,7 +16,6 @@ jobs:
            cd test
            java -Dfile.encoding=UTF-8 -classpath bin:resources test.testCBA
       - name: "test-report"
-        run: ls -l
         uses: actions/upload-artifact@v4
         with:
           name: test-report
