@@ -6,7 +6,7 @@ on:
       - sample
       - feature/*
 jobs:
-  setup-job:
+  testexec-job:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,6 +24,7 @@ jobs:
           echo "Setup done"
       - name: "test-execution"
         run: |
+           cd test
            ls -l
            java -Dfile.encoding=UTF-8 -classpath bin:resources test.testCBA
       - name: "save-test-report"
