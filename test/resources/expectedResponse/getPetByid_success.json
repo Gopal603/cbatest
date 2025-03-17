@@ -1,0 +1,18 @@
+{
+    "id": 2,
+    "category": {
+        "id": 0,
+        "name": "dogs"
+    },
+    "name": "Sharik",
+    "photoUrls": [
+        "stepik.org"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "cute"
+        }
+    ],
+    "status": "pending"
+}
