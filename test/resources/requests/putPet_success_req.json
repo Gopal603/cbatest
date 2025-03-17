@@ -1,0 +1,15 @@
+{
+  "id": "6763547",
+  "category": {
+    "id": 6763547,
+    "name": "string"
+  },
+  "name": "cured dog",
+  "tags": [
+    {
+      "id": 6763547,
+      "name": "dog"
+    }
+  ],
+  "status": "available"
+}

@@ -1,0 +1,9 @@
+Test Case No,Test Case Description,Test Result
+Test case No 1,Check if pet details are retrieved successfully,FAILED
+Test case No 2,check if pet details with invalid pet id,FAILED
+Test case No 3,Check if new pet is created successfully,PASSED
+Test case No 4,check if success returned when pet is updated,PASSED
+Test case No 5,Check if pets are retrieve successfully ,FAILED
+Test case No 6,Check if error response is returned when trying to delete invalid pet id,PASSED
+Test case No 7,check if success when trying to delete valid pet id,PASSED
+Test case No 8,check if upload photo successfully for a pet,PASSED

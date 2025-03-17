@@ -1,3 +1,9 @@
 ﻿TestCaseNo,TestCaseDescription,HttpMethod,endpoint,Request,ExpectedResponse,ResponseCode
-1,Check if pet details are retrieved successfully,GET,https://petstore.swagger.io/v2/pet/2,,getPetByid_Success.json,200
-2,check if pet details with invalid pet id,GET,https://petstore.swagger.io/v2/pet/12345,,getPetByid_Error.json,404
+1,Check if pet details are retrieved successfully,GET,https://petstore.swagger.io/v2/pet/2,,getPetByid_success.json,200
+2,check if pet details with invalid pet id,GET,https://petstore.swagger.io/v2/pet/12345,,getPetByid_error.json,404
+3,Check if new pet is created successfully,POST,https://petstore.swagger.io/v2/pet,postPet_success_req.json,postPet_success_rsp.json,200
+4,check if success returned when pet is updated,PUT,https://petstore.swagger.io/v2/pet,putPet_success_req.json,putPet_success_rsp.json,200
+5,Check if pets are retrieve successfully ,GET,https://petstore.swagger.io/v2/pet/findByStatus?status=unavailable,,getPetByStatus_success_rsp.json,200
+6,Check if error response is returned when trying to delete invalid pet id,DELETE,https://petstore.swagger.io/v2/pet/13234534533,,delPetid_error_rsp.json,404
+7,check if success when trying to delete valid pet id,DELETE,https://petstore.swagger.io/v2/pet/6763547,,delPetid_success_rsp.json,200
+8,check if upload photo successfully for a pet,POST,https://petstore.swagger.io/v2/pet/2/uploadImage,test.jpg,postUploadImage_success.json,200

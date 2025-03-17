@@ -22,12 +22,12 @@ public class Filehandler {
 		return filecontent;
 	}
 	public static void writefile(String filename,String filecontent) throws Exception{
-		Files.write(Paths.get("./target/"+filename), filecontent.getBytes(), StandardOpenOption.CREATE);
+		Files.write(Paths.get("target/"+filename), filecontent.getBytes(), StandardOpenOption.CREATE);
 
 	}
 	public static void createoutputfile() {
 		try {
-			File file = new File("./target/testresult.csv");
+			File file = new File("target/testresult.csv");
 			new File("target").mkdir();
 			file.createNewFile();
 			writeresultfile("Test Case No,Test Case Description,Test Result");
@@ -37,6 +37,6 @@ public class Filehandler {
 		}
 	}
 	public static void writeresultfile(String linetowrite) throws Exception{
-		Files.write(Paths.get("./target/testresult.csv"), (linetowrite+"\n").getBytes(), StandardOpenOption.APPEND);
+		Files.write(Paths.get("target/testresult.csv"), (linetowrite+"\n").getBytes(), StandardOpenOption.APPEND);
 	}
 }

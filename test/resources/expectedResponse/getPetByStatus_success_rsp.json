@@ -1,0 +1,74 @@
+[
+    {
+        "id": 802,
+        "category": {
+            "id": 1,
+            "name": "Dogs"
+        },
+        "name": "Bernice",
+        "photoUrls": [
+            "http://boyd.biz"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "friendly"
+            }
+        ],
+        "status": "unavailable"
+    },
+    {
+        "id": 533,
+        "category": {
+            "id": 2,
+            "name": "cat"
+        },
+        "name": "Ruthie",
+        "photoUrls": [
+            "https://benny.biz"
+        ],
+        "tags": [
+            {
+                "id": 2,
+                "name": "purring"
+            }
+        ],
+        "status": "unavailable"
+    },
+    {
+        "id": 744,
+        "category": {
+            "id": 2,
+            "name": "cat"
+        },
+        "name": "Verlie",
+        "photoUrls": [
+            "https://dax.info"
+        ],
+        "tags": [
+            {
+                "id": 2,
+                "name": "purring"
+            }
+        ],
+        "status": "unavailable"
+    },
+    {
+        "id": 360,
+        "category": {
+            "id": 2,
+            "name": "cat"
+        },
+        "name": "Osbaldo",
+        "photoUrls": [
+            "http://kory.net"
+        ],
+        "tags": [
+            {
+                "id": 2,
+                "name": "purring"
+            }
+        ],
+        "status": "unavailable"
+    }
+]
